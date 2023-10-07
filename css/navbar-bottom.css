@@ -1,16 +1,38 @@
-
-
-.navbarBottom {
-    background-color: #F9F4F4;
-    color: white;
-    height: 72px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    right: 0;
-    transition: bottom .3s;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row-reverse;
-}
-
+/* Mobile Layout */
+@media (max-width: 767px) {
+    /* Add your mobile layout styles here */
+    .navbarBottom {
+      background-color: #F9F4F4;
+      color: white;
+      height: 72px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      right: 0;
+      transition: bottom .3s;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row-reverse;
+  }
+  
+  }
+  
+  /* Desktop Layout */
+  @media (min-width: 768px) {
+    /* Add your desktop layout styles here */
+    .navbarBottom {
+      background-color: #F9F4F4;
+      color: white;
+      height: 72px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      right: 0;
+      transition: bottom .3s;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row-reverse;
+      opacity: 0;
+  }
+  
+  }

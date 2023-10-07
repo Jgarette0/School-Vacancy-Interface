@@ -36,7 +36,7 @@ function check_register_errors(){
     unset($_SESSION['errors_register']);
   } else if (isset($_GET["register"]) && $_GET["register"] ==="success"){
     echo '<br>';
-    echo '<div class="form-success" style="color:green">Registered!</div>';
+    echo '<div class="form-success" style="color:green">Registration successful. Continue to login.</div>';
   }
  
 

@@ -36,14 +36,14 @@ $_SESSION["register_data"] =$registerData;
 if($errors){
   $_SESSION["errors_register"] = $errors;
 
-  header("Location: ../index.php");
+  header("Location: ../user/register.php");
   die();
 } 
 
 create_user($pdo,$username, $password,$email);
 
 
-header("Location: ../index.php?register=success");
+header("Location: ../user/register.php?register=success");
 
 $pdo = null;
 $stmt = null;
@@ -52,7 +52,7 @@ die();
   die("Query failed: ". $e->getMessage());
 }
 } else{
-  header("Location: ../index.php");
+  header("Location: ../user/register.php");
   die();
 }
 

@@ -16,6 +16,8 @@ function check_login_errors(){
     echo '<br>';
     echo '<div class="form-success" style="color:green">logged in!</div>';
   }
- 
 
+}
+function login_success() {
+  return '<div id="success-message" class="form-success" style="color:green">You have successfully logged in!</div>';
 }

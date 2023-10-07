@@ -11,8 +11,8 @@ require_once '../includes/login_view.inc.php';
   <title>Login here</title>
   <link rel="stylesheet" href="../css/user.css">
 </head>
-<body>
-<body>
+<body>"
+  <div class="register-container">
       <div class="header-div">
         <div class="logo-container">
           <img src="../images/cctc.png" alt="CCTC">
@@ -26,7 +26,7 @@ require_once '../includes/login_view.inc.php';
       </div>
       <div class="form-div">
         <form class="login-form" 
-              action="includes/register.inc.php" 
+              action="../includes/register.inc.php" 
               method="post">
           <div class="inputs-container">
             <div>
@@ -94,6 +94,7 @@ require_once '../includes/login_view.inc.php';
         <a href="">Docs</a>
     </div>
     <div>Contact CCTC-guide support</div>
+</div>
 </div>
 </body>
 <script src="../js/user.js"></script>
