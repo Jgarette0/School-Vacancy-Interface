@@ -20,7 +20,7 @@
   transition: bottom 0.3s;
   overflow: hidden;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -36,17 +36,9 @@
   transition: color 0.3s;
 }
 
-/* Active item styling */
-.navItem.active {
-  color: #007BFF; /* Highlighted color for the active item */
-}
 
 /* Icon styling (you can customize this) */
-.navItem img {
-  width: 24px;
-  height: 24px;
-  margin-bottom: 4px;
-}
+
 
   
   }
