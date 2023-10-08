@@ -1,13 +1,17 @@
 
+:root {
+  --dark-color: #171717;
+  --light-color: #fafafa;
+}
+
 body{
   margin: 0;
   font-family:Arial, Helvetica, sans-serif;
   height: 2000px;
-  background-color: #13131A;
+  background-color: var(--light-color);
 }
 
 .navbar {
-  background-color: #F9F4F4;
   overflow: hidden;
   transition: top 0.3s;
   position: fixed;
@@ -17,6 +21,9 @@ body{
   flex-direction: row-reverse;
   align-items: center;
   justify-content: flex-start;
+  background-color:var(--light-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 300;
 
 }
 
@@ -44,7 +51,7 @@ body{
 
 .account-list{
   margin: auto;
-  color: #F9F4F4;
+  color: var(--dark-color);
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -52,7 +59,7 @@ body{
 }
 
 #theDialog{
-  background-color: #F9F4F4;
+  background-color: var(--dark-color);
   z-index: 100;
   max-width: 80%;
   margin-left: auto;
@@ -64,7 +71,7 @@ body{
 }
 
 .account-list button{
-  background-color: #24242b;
+  background-color: var(--dark-color);
   color: #E5E1E1;
   border-radius: 5px;
   border:none;
@@ -77,12 +84,12 @@ body{
 .account-list button:hover{
   background-color: #494955;
   transition: ease .3s;
-  color: #F9F4F4;
+  color: var(--dark-color);
 }
 .account-list button:active{
   background-color: #494955;
   transition: ease .3s;
-  color: #F9F4F4;
+  color: var(--dark-color);
 }
 #acc1{
   padding-right:22px ;

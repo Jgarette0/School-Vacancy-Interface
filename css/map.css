@@ -19,8 +19,8 @@
   .map {
     border: none;
     border-radius: 20px;
-    background-color:var(--light-color);
-    color: var(--dark-color);
+    background-color:var(--dark-color);
+    color: var(--light-color);
     position: fixed;
     bottom: 0;
     transition: bottom .3s;
@@ -55,6 +55,8 @@
     flex-direction: row;
     justify-content: center;
     align-items:flex-start;
+        background-color:var(--dark-color);
+    color: var(--light-color);
   
   }
   
@@ -62,8 +64,8 @@
   .map {
     border: none;
     border-radius: 20px;
-    background-color: #F9F4F4;
-    color: var(--dark-color);
+    background-color:var(--dark-color);
+    color: var(--light-color);
     position: fixed;
     bottom: 0;
     transition: bottom .3s;
@@ -79,7 +81,7 @@
   }
   .map:hover{
     transition: ease .3s;
-    background-color: #d2cbcb;
+    background-color: #2b2b2b;
   }
   .map img{
     height: 24px;

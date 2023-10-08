@@ -1,19 +1,53 @@
+
+:root {
+  --dark-color: #171717;
+  --light-color: #fafafa;
+}
+
 /* Mobile Layout */
 @media (max-width: 767px) {
     /* Add your mobile layout styles here */
-    .navbarBottom {
-      background-color: #F9F4F4;
-      color: white;
-      height: 72px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      right: 0;
-      transition: bottom .3s;
-      overflow: hidden;
-      display: flex;
-      flex-direction: row-reverse;
-  }
+   /* Navbar styling */
+.navbarBottom {
+  background-color: var(--light-color);
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--dark-color);
+  height: 72px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  right: 0;
+  transition: bottom 0.3s;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Navbar item styling */
+.navItem {
+  text-decoration: none;
+  color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  transition: color 0.3s;
+}
+
+/* Active item styling */
+.navItem.active {
+  color: #007BFF; /* Highlighted color for the active item */
+}
+
+/* Icon styling (you can customize this) */
+.navItem img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+
   
   }
   
@@ -21,8 +55,9 @@
   @media (min-width: 768px) {
     /* Add your desktop layout styles here */
     .navbarBottom {
-      background-color: #F9F4F4;
-      color: white;
+      background-color:var(--light-color);
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      color: var(--dark-color);
       height: 72px;
       position: fixed;
       bottom: 0;
