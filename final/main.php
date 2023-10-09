@@ -1,3 +1,8 @@
+
+  
+  <!--This main handles all the images and the name of the classroom-name
+  This also show that statuses of each classroom (Vacant or Ocuppied)-->
+  
 <main class="main">
   
   <div class="div1">

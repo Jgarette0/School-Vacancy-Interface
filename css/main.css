@@ -43,7 +43,7 @@
   align-items: center;
   box-sizing: border-box;
   overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;;
   font-weight: bold;
   color:var(--dark-color);
 
@@ -63,7 +63,7 @@
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-  margin-top: 10px;
+  
 }
 .diva img {
   width: 100%;
@@ -145,13 +145,13 @@
   border-radius: 8px; /* If you want to make the icon circular */
   z-index: 1; /* Ensure the icon is above the image */
   cursor: pointer;
-  font-family: helvetica !important;
+  font-family: 'Roboto', sans-serif;;
   opacity: 0;
   font-size: 10px;
 }
 .div1:hover .status {
   opacity: 1;
-  background-color: white !important;
+  background-color: var(--light-color) !important;
   transition: ease .3s !important;
 
 }

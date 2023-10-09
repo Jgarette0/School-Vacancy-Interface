@@ -75,19 +75,19 @@ body{
   color: #E5E1E1;
   border-radius: 5px;
   border:none;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;;
   padding: 4px 6px;
   margin-top: 5px;
   text-align: center;
   cursor: pointer;
 }
 .account-list button:hover{
-  background-color: #494955;
+  background-color: var(--light-color);
   transition: ease .3s;
   color: var(--dark-color);
 }
 .account-list button:active{
-  background-color: #494955;
+  background-color:var(--light-color);
   transition: ease .3s;
   color: var(--dark-color);
 }

@@ -1,16 +1,24 @@
-<nav>
+      
+      <!--
+      *A top navigation bar
+      *a search input where a user can search classrooms
+      * lord icon - is an free icons from lordicon.com
+      *A search input that search data through post method
+      *Below the navbar is an Dialog - model, which popup when the avatar icon is clicked
+      s-->
+   <nav>
       <div class="navbar" id="navbar">
         <a>
           <div class="profile-holder">
             <button id="profileBtn">
               <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-              <lord-icon src="https://cdn.lordicon.com/eszyyflr.json" trigger="click"  colors="primary:#121331,secondary:#000000" style="width:30px;height:30px;">
+              <lord-icon src="https://cdn.lordicon.com/eszyyflr.json" trigger="click"  colors="primary:#121331,secondary:#000000" style="width:36px;height:36px;">
               </lord-icon>
             </button>
           </div>
         </a>
         <div class="search-container">
-          <form class="searchform" action="" method="post">
+          <form class="searchform" action="search.php" method="post">
             <a>
               <button type="submit" class="submits">
                 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
