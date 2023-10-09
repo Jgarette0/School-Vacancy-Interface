@@ -40,7 +40,6 @@
      die("Query failed: ".$e->getMessage()); 
     }
  
-   
  } 
  else {
  
