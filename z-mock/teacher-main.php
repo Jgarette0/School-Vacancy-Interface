@@ -3,7 +3,7 @@
   <!--This main handles all the images and the name of the classroom-name
   This also show that statuses of each classroom (Vacant or Ocuppied)-->
   
-  <main class="main">
+<main class="main">
   
   <div class="div1" id="modal1">
     <div class="diva"><img src="https://images.pexels.com/photos/8423439/pexels-photo-8423439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1"></div>
@@ -25,16 +25,13 @@
       </div>
       <div class="display-buttons">
       <form method="post" action="../private-includes/update.php">
-        <button class="btn-yes" type="submit" name="classroomId" value="1">Yes</button>
+        <button type="submit" name="classroomId" style="background-color:#f0f0f0;" value="1">Yes</button>
     </form>
         <button class="noway">No</button>
       </div>
       </div>
     </dialog>
   </div>
-  <style>
-
-  </style>
 
   <div class="div1" id="modal2">
     <div class="diva"><img src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1"></div>

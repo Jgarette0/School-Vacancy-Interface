@@ -15,7 +15,7 @@
 </head>
 <body>
   <?php include 'navbar.php'; ?>
-  <?php include '../final/private-main.php'; ?>
+  <?php include 'private-main.php'; ?>
   <?php include '../final/navbar-bottom.php'; ?>
   <?php include '../final/map.php'; ?>
 

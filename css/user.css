@@ -112,7 +112,7 @@ body{
 
 .submit:hover{
   transition:ease .3s;
-  background-color: var(--light-color);
+  background-color: gray;
 }
 
 .create-account{
