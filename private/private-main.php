@@ -5,36 +5,46 @@
   
   <main class="main">
   
-  <div class="div1" id="modal1">
-    <div class="diva"><img src="https://images.pexels.com/photos/8423439/pexels-photo-8423439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1"></div>
-    <div class="divb">
-      <div class="classroom-name">Lecture room</div>
-      <div class="status">
-      <div><img src="../images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
-      <label class="l-vacant"for="vacant">Vacant</label>
-    </div>
-    </div>
-  </div>
+      <div class="div1" id="modal1">
+        <div class="diva"><img src="https://images.pexels.com/photos/8423439/pexels-photo-8423439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1">
+        </div>
+        <div class="divb">
+          <div class="classroom-name">Lecture room</div>
+          <div class="status">
+            <div>
+              <img src="../images/vacant-icon.svg" alt="example" class="vacant" id="vacant">
+            </div>
+            <label class="l-vacant"for="vacant">
+              Vacant
+            </label>
+          </div>
+        </div>
+      </div>
+      <!--
+        -"This part will be modal or pop-ups"
+        -If class=modal1 is clicked the  setupModalAndDialog(); function will proceed and a pop-up will appear.
+      -->
+      <div class="displays">
+        <dialog class="dialog" id="dialog1">
+          <div class="dialog-content">
+            <div class="display-close">x</div>
+            <div class="display-header">
+              Do you want to use this room1?
+            </div>
+            <div class="display-buttons">
+              <form method="post" action="../private-includes/update.php">
+                <button class="btn-yes" type="submit" name="classroomId" value="1">
+                  Yes
+                </button>
+              </form>
+              <button class="noway">
+                No
+              </button>
+            </div>
+          </div>
+        </dialog>
+      </div>
 
-  <div class="displays">
-    <dialog class="dialog" id="dialog1">
-      <div class="dialog-content">
-      <div class="display-close">x</div>
-      <div class="display-header">
-        Do you want to use this room1?
-      </div>
-      <div class="display-buttons">
-      <form method="post" action="../private-includes/update.php">
-        <button class="btn-yes" type="submit" name="classroomId" value="1">Yes</button>
-    </form>
-        <button class="noway">No</button>
-      </div>
-      </div>
-    </dialog>
-  </div>
-  <style>
-
-  </style>
 
   <div class="div1" id="modal2">
     <div class="diva"><img src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1"></div>

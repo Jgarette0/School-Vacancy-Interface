@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="../css/map.css">
 </head>
 <body>
+
   <?php include 'navbar.php'; ?>
   <?php include 'private-main.php'; ?>
   <?php include '../final/navbar-bottom.php'; ?>
