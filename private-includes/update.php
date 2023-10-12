@@ -22,7 +22,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->bindParam(':classroomId', $classroomId, PDO::PARAM_INT);
 
         if ($stmt->execute()) {
-            echo 'Status updated successfully.';
+            header("Location: ../private/dashboard.php");
+            echo '<h1>Status updated successfully.</h1>';
+
         } else {
             echo 'Error updating status.';
         }
@@ -34,4 +36,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Handle invalid requests
     echo 'Invalid request.';
 }
-?>
+

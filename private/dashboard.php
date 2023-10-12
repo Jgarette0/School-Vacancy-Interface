@@ -20,6 +20,7 @@
   <?php include '../final/navbar-bottom.php'; ?>
   <?php include '../final/map.php'; ?>
 
+
 </body>
 <script src="../js/navbar.js"></script>
 <script src="../js/user.js"></script>

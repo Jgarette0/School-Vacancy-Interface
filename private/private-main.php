@@ -1,10 +1,32 @@
+<?php
+require_once "../includes/dbh.inc.php";
 
-  
-  <!--This main handles all the images and the name of the classroom-name
-  This also show that statuses of each classroom (Vacant or Ocuppied)-->
-  
+// Function to get the icon HTML based on the classroom status
+function getIconHTML($c_id) {
+    global $pdo; // Access the global database connection
+
+    // Query the status for the specified c_id
+    $query = "SELECT status FROM classroom WHERE c_id = :c_id";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(':c_id', $c_id);
+    $stmt->execute();
+
+    // Fetch the status
+    $status = $stmt->fetchColumn();
+
+    if ($status == "occupied") {
+        return '<img src="../images/occupied-icon.svg" alt="Occupied Icon" class="occupied" id="occupied">';
+    } elseif ($status == "vacant") {
+        return '<img src="../images/vacant-icon.svg" alt="Vacant Icon" class="vacant" id="vacant">';
+    } else {
+        // Handle the case when the status is neither 'occupied' nor 'vacant'
+        return '<img src="unknown.svg" alt="Unknown Icon">';
+    }
+}
+
+?>
+
   <main class="main">
-  
       <div class="div1" id="modal1">
         <div class="diva"><img src="https://images.pexels.com/photos/8423439/pexels-photo-8423439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1">
         </div>
@@ -12,18 +34,13 @@
           <div class="classroom-name">Lecture room</div>
           <div class="status">
             <div>
-              <img src="../images/vacant-icon.svg" alt="example" class="vacant" id="vacant">
+            <?php echo getIconHTML(1); // Change the c_id as needed ?>
             </div>
-            <label class="l-vacant"for="vacant">
-              Vacant
-            </label>
+           
           </div>
         </div>
       </div>
-      <!--
-        -"This part will be modal or pop-ups"
-        -If class=modal1 is clicked the  setupModalAndDialog(); function will proceed and a pop-up will appear.
-      -->
+
       <div class="displays">
         <dialog class="dialog" id="dialog1">
           <div class="dialog-content">
@@ -45,39 +62,45 @@
         </dialog>
       </div>
 
-
+      
   <div class="div1" id="modal2">
-    <div class="diva"><img src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1"></div>
+    <div class="diva"><img src="https://images.pexels.com/photos/2675061/pexels-photo-2675061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1"></div>
     <div class="divb">
-      <div class="classroom-name">TVL room</div>
+      <div class="classroom-name">Computer Laboratory</div>
       <div class="status">
-      <div><img src="../images/occupied-icon.svg" alt="example" class="occupied" id="occupied"></div>
-      <label class="l-occupied"for="occupied">Occupied</label>
+      <div>            <?php echo getIconHTML(2); // Change the c_id as needed ?></div>
+     
     </div>
     </div>
   </div>
+
   <div class="displays">
     <dialog class="dialog" id="dialog2">
       <div class="dialog-content">
       <div class="display-close">x</div>
       <div class="display-header">
-        Do you want to use this room2?
+        Do you want to use this room3?
       </div>
       <div class="display-buttons">
-        <button>Yes</button>
+      <form method="post" action="../private-includes/update.php">
+                <button class="btn-yes" type="submit" name="classroomId" value="2">
+                  Yes
+                </button>
+              </form>
         <button class="noway">No</button>
       </div>
       </div>
     </dialog>
   </div>
 
+
   <div class="div1" id="modal3">
-    <div class="diva"><img src="https://images.pexels.com/photos/256395/pexels-photo-256395.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1"></div>
+    <div class="diva"><img src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1"></div>
     <div class="divb">
-      <div class="classroom-name">St. Augustine room</div>
+      <div class="classroom-name">TVL room</div>
       <div class="status">
-      <div><img src="../images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
-      <label class="l-vacant"for="vacant">Vacant</label>
+      <div>            <?php echo getIconHTML(3); // Change the c_id as needed ?></div>
+     
     </div>
     </div>
   </div>
@@ -86,41 +109,20 @@
       <div class="dialog-content">
       <div class="display-close">x</div>
       <div class="display-header">
-        Do you want to use this room3?
+        Do you want to use this room2?
       </div>
       <div class="display-buttons">
-        <button>Yes</button>
+      <form method="post" action="../private-includes/update.php">
+                <button class="btn-yes" type="submit" name="classroomId" value="3">
+                  Yes
+                </button>
+              </form>
         <button class="noway">No</button>
       </div>
       </div>
     </dialog>
   </div>
 
-  <div class="div1" id="modal4">
-    <div class="diva"><img src="https://images.pexels.com/photos/2675061/pexels-photo-2675061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1"></div>
-    <div class="divb">
-      <div class="classroom-name">Computer Laboratory</div>
-      <div class="status">
-      <div><img src="../images/occupied-icon.svg" alt="example" class="occupied" id="occupied"></div>
-      <label class="l-occupied"for="occupied">Occupied</label>
-    </div>
-    </div>
-  </div>
-
-  <div class="displays">
-    <dialog class="dialog" id="dialog4">
-      <div class="dialog-content">
-      <div class="display-close">x</div>
-      <div class="display-header">
-        Do you want to use this room4?
-      </div>
-      <div class="display-buttons">
-        <button>Yes</button>
-        <button class="noway">No</button>
-      </div>
-      </div>
-    </dialog>
-  </div>
 
 </main>
 <script>

@@ -18,7 +18,7 @@
           </div>
         </a>
         <div class="search-container">
-          <form class="searchform" action="../search/index.php" method="post">
+          <form class="searchform" action="../search/search.php" method="post">
             <a>
               <button type="submit" class="submits">
                 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
