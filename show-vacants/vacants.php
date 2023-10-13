@@ -45,6 +45,69 @@
         </div>
       </div>
     </nav>
+    <nav class="navbarBottom">
+<div class="radio-container">
+<div class="radio-inputs">
+		<label>
+			<input class="radio-input" type="radio" name="engine">
+				<span class="radio-tile">
+        <a href="">
+					<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+            <lord-icon
+              src="https://cdn.lordicon.com/dycatgju.json"
+              trigger="click"
+              colors="primary:#171717"
+              state="hover-2"
+              style="width:32px;height:32px;  margin-bottom: -5px">
+            </lord-icon>
+					<span class="radio-label">Settings</span>
+          </a>
+				</span>
+		</label>
+    <label>
+			<input class="radio-input" type="radio" name="engine">
+			<span class="radio-tile">
+      <a href="../private/dashboard.php">
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+        <lord-icon
+      src="https://cdn.lordicon.com/slduhdil.json"
+      trigger="click"
+      colors="primary:#171717"
+      state="hover-3"
+      style="width:32px;height:32px; margin-bottom: -5px">
+    </lord-icon>
+				<span class="radio-label">Home</span>
+        </a>
+			</span>
+		</label>
+    
+		<label>
+			<input checked="" class="radio-input" type="radio" name="engine">
+			<span class="radio-tile">
+      <a href="../show-vacants/private-vacants.php">
+				<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+        <lord-icon
+          src="https://cdn.lordicon.com/zncllhmn.json"
+          trigger="click"
+          colors="primary:#171717"
+          state="hover"
+          style="width:32px;height:32px; margin-bottom: -5px">
+        </lord-icon>
+    <span class="radio-label">Vacants</span>	
+    </a>
+			</span>
+		</label>
+
+</div>
+  </div>
+</nav>
+<style>
+      a{
+        margin: none;
+        padding: none;
+        text-decoration: none;
+      }
+    </style>
 <?php
 
     require_once "../includes/dbh.inc.php";

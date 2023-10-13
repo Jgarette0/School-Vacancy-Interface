@@ -50,15 +50,17 @@
 		<label>
 			<input class="radio-input" type="radio" name="engine">
 				<span class="radio-tile">
+        <a href="">
 					<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
             <lord-icon
               src="https://cdn.lordicon.com/dycatgju.json"
               trigger="click"
               colors="primary:#171717"
               state="hover-2"
-              style="width:32px;height:32px; margin-bottom: 4px">
+              style="width:32px;height:32px;  margin-bottom: -5px">
             </lord-icon>
 					<span class="radio-label">Settings</span>
+          </a>
 				</span>
 		</label>
     <label>
