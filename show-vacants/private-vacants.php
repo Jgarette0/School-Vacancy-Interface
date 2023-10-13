@@ -16,7 +16,7 @@
 <body>
       <nav>
       <div class="navbar" id="navbar">
-      <a href="../final/index.php">
+      <a href="../private/dashboard.php">
           <div class="profile-holder">
             <button id="profileBtn">
             <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
@@ -29,7 +29,7 @@
           </div>
         </a>
         <div class="search-container">
-          <form class="searchform" action="../search/search.php" method="post">
+          <form class="searchform" action="../search/private-search.php" method="post">
             <a>
               <button type="submit" class="submits">
                 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
@@ -44,68 +44,84 @@
         </div>
       </div>
     </nav>
-    <div class="classroom-btn">
-      <button class="cbutton" onclick="suggestion('Computer Laboratory')">Computer Laboratory</button>
-      <button class="cbutton" onclick="suggestion('Lecture Room')">Lecture Room</button>
-      <button class="cbutton" onclick="suggestion('TVL Room')">TVL Room</button>
-      <button class="cbutton" onclick="suggestion('MD Room')">MD Room</button>
-      <button class="cbutton" onclick="suggestion('SA Room')">SA Room</button>
-       <button class="cbutton" onclick="suggestion('Computer Laboratory')">Computer Laboratory</button>
-       <button class="cbutton" onclick="suggestion('Computer Laboratory')">Computer Laboratory</button>
-      <button class="cbutton" onclick="suggestion('Lecture Room')">Lecture Room</button>
-      <button class="cbutton" onclick="suggestion('TVL Room')">TVL Room</button>
-      <button class="cbutton" onclick="suggestion('MD Room')">MD Room</button>
-      <button class="cbutton" onclick="suggestion('SA Room')">SA Room</button>
-       <button class="cbutton" onclick="suggestion('Computer Laboratory')">Computer Laboratory</button>
-     
-    </div>
+    <nav class="navbarBottom">
+<div class="radio-container">
+<div class="radio-inputs">
+		<label>
+			<input class="radio-input" type="radio" name="engine">
+				<span class="radio-tile">
+					<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+            <lord-icon
+              src="https://cdn.lordicon.com/dycatgju.json"
+              trigger="click"
+              colors="primary:#171717"
+              state="hover-2"
+              style="width:32px;height:32px; margin-bottom: 4px">
+            </lord-icon>
+					<span class="radio-label">Settings</span>
+				</span>
+		</label>
+    <label>
+			<input class="radio-input" type="radio" name="engine">
+			<span class="radio-tile">
+      <a href="../private/dashboard.php">
+        <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+        <lord-icon
+      src="https://cdn.lordicon.com/slduhdil.json"
+      trigger="click"
+      colors="primary:#171717"
+      state="hover-3"
+      style="width:32px;height:32px; margin-bottom: -5px">
+    </lord-icon>
+				<span class="radio-label">Home</span>
+        </a>
+			</span>
+		</label>
+    
+		<label>
+			<input checked="" class="radio-input" type="radio" name="engine">
+			<span class="radio-tile">
+      <a href="../show-vacants/private-vacants.php">
+				<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+        <lord-icon
+          src="https://cdn.lordicon.com/zncllhmn.json"
+          trigger="click"
+          colors="primary:#171717"
+          state="hover"
+          style="width:32px;height:32px; margin-bottom: -5px">
+        </lord-icon>
+    <span class="radio-label">Vacants</span>	
+    </a>
+			</span>
+		</label>
+
+</div>
+  </div>
+</nav>
+<style>
+      a{
+        margin: none;
+        padding: none;
+        text-decoration: none;
+      }
+    </style>
         <section>
         <?php 
  
- if($_SERVER["REQUEST_METHOD"] == "POST"){
-   $userSearch = $_POST["usersearch"];
- 
-   try {
-     require_once "../includes/dbh.inc.php";
-     $query = "SELECT * FROM classroom WHERE classroomName = :usersearch;";
- 
- 
-     $stmt = $pdo -> prepare($query);
- 
-     $stmt -> bindParam(":usersearch",$userSearch);
-  
- 
-     $stmt-> execute();
-     $results = $stmt ->fetchAll(PDO::FETCH_ASSOC);
- 
-     $pdo = null;
-     $stmt = null;
-   }
-   catch(PDOException $e){
-     die("Query failed: ".$e->getMessage()); 
-    }
- 
- } 
- else {
- 
- }
- ?>
- 
- 
- 
-       <?php 
-        
-       if(empty($results)){
-        echo "<div>";
-        echo "<p>There were no results!</p>";
-        echo "</div>";
-       }
-       else{
+ require_once "../includes/dbh.inc.php";
+    
+    // Modify the SQL query to select all vacant classrooms
+    $query = "SELECT * FROM classroom WHERE status = 'vacant';";
+
+    $stmt = $pdo->prepare($query);
+
+    $stmt->execute();
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         foreach($results as $row){
            
           echo '<div class="div1" id="modal1">';
-          echo '<div class="diva"><img src="https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1"></div>';
+          echo '<div class="diva"><img src="example'. $row["c_id"] . '.png" alt="example" class="img1"></div>';
           echo '<div class="divb">';
           echo '<div class="classroom-name">' . htmlspecialchars($row["classroomName"]) . '</div>';
           echo '<div>';
@@ -115,18 +131,64 @@
           echo '</div>';
           echo '</div>';
           echo '</div>';
-         
+          echo '<div class="displays">';
+          echo '<dialog class="dialog" id="dialog1">';
+          echo '<div class="dialog-content">';
+          echo '<div class="display-close">x</div>';
+          echo '<div class="display-header">';
+          echo 'Do you want to use this room1?';
+          echo '</div>';
+          echo '<div class="display-buttons">';
+          echo '<form method="post" action="../private-includes/update.php">';
+          echo '<button class="btn-yes" type="submit" name="classroomId" value="' . htmlspecialchars($row["c_id"]) . '">';
+          echo 'Yes';
+          echo '</button>';
+          echo '</form>';
+          echo '<button class="noway">';
+          echo 'No';
+          echo '</button>';
+          echo '</div>';
+          echo '</div>';
+          echo '</dialog>';
           echo '</div>';
           
         }
 
-       }
+        $pdo = null;
+        $stmt = null;
      
 
 
        ?>
        </section>
+       <script>
+function setupModalAndDialog(modalId, dialogId) {
+    const modal = document.getElementById(modalId);
+    const dialog = document.getElementById(dialogId);
 
+    modal.addEventListener('click', () => {
+      dialog.showModal();
+    });
+
+     const closeButton = dialog.querySelector('.noway');
+     closeButton.addEventListener('click', () => {
+      dialog.close();
+    });
+    const closeIcon = dialog.querySelector('.display-close'); 
+  closeIcon.addEventListener('click', () => {
+    dialog.close();
+  });
+  }
+
+  // Set up event listeners for each modal and dialog
+  setupModalAndDialog('modal1', 'dialog1');
+  setupModalAndDialog('modal2', 'dialog2');
+  setupModalAndDialog('modal3', 'dialog3');
+  setupModalAndDialog('modal4','dialog4');
+
+  // Add more modals and dialogs by calling setupModalAndDialog with different IDs
+
+</script>
 <style>
   p{
     color: red;
@@ -235,4 +297,13 @@
       inputText.value = text;
     }
   </script>
+
+
+    </div>
+<style>
+  nav{
+    z-index: 999;
+  }
+</style>
+</body>
 </html>

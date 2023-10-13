@@ -12,13 +12,13 @@
           <div class="profile-holder">
             <button id="profileBtn">
               <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-              <lord-icon src="https://cdn.lordicon.com/eszyyflr.json" trigger="click"  colors="primary:#121331,secondary:#000000" style="width:36px;height:36px;">
+              <lord-icon src="https://cdn.lordicon.com/eszyyflr.json" trigger="click"  colors="primary:#121331,secondary:#000000" style="width:36px;height:36px;margin-bottom:-5px;">
               </lord-icon>
             </button>
           </div>
         </a>
         <div class="search-container">
-          <form class="searchform" action="search.php" method="post">
+          <form class="searchform" action="../search/search.php" method="post">
             <a>
               <button type="submit" class="submits">
                 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>

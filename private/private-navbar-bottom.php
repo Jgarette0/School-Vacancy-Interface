@@ -4,7 +4,7 @@
       *a navagation bar handles home, list and settings
       *lord icon- is an open source icons
     -->
-<nav class="navbarBottom">
+    <nav class="navbarBottom">
 <div class="radio-container">
 <div class="radio-inputs">
 		<label>
@@ -40,7 +40,7 @@
 		<label>
 			<input class="radio-input" type="radio" name="engine">
 			<span class="radio-tile">
-      <a href="../show-vacants/vacants.php">
+      <a href="../show-vacants/private-vacants.php">
 				<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
         <lord-icon
           src="https://cdn.lordicon.com/zncllhmn.json"

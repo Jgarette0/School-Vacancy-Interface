@@ -16,7 +16,7 @@
 <body>
       <nav>
       <div class="navbar" id="navbar">
-      <a href="../final/index.php">
+      <a href="../private/dashboard.php">
           <div class="profile-holder">
             <button id="profileBtn">
             <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
@@ -29,7 +29,7 @@
           </div>
         </a>
         <div class="search-container">
-          <form class="searchform" action="../search/search.php" method="post">
+          <form class="searchform" action="../search/private-search.php" method="post">
             <a>
               <button type="submit" class="submits">
                 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
@@ -115,7 +115,25 @@
           echo '</div>';
           echo '</div>';
           echo '</div>';
-         
+          echo '<div class="displays">';
+          echo '<dialog class="dialog" id="dialog1">';
+          echo '<div class="dialog-content">';
+          echo '<div class="display-close">x</div>';
+          echo '<div class="display-header">';
+          echo 'Do you want to use this room1?';
+          echo '</div>';
+          echo '<div class="display-buttons">';
+          echo '<form method="post" action="../private-includes/update.php">';
+          echo '<button class="btn-yes" type="submit" name="classroomId" value="' . htmlspecialchars($row["c_id"]) . '">';
+          echo 'Yes';
+          echo '</button>';
+          echo '</form>';
+          echo '<button class="noway">';
+          echo 'No';
+          echo '</button>';
+          echo '</div>';
+          echo '</div>';
+          echo '</dialog>';
           echo '</div>';
           
         }
@@ -126,7 +144,34 @@
 
        ?>
        </section>
+       <script>
+function setupModalAndDialog(modalId, dialogId) {
+    const modal = document.getElementById(modalId);
+    const dialog = document.getElementById(dialogId);
 
+    modal.addEventListener('click', () => {
+      dialog.showModal();
+    });
+
+     const closeButton = dialog.querySelector('.noway');
+     closeButton.addEventListener('click', () => {
+      dialog.close();
+    });
+    const closeIcon = dialog.querySelector('.display-close'); 
+  closeIcon.addEventListener('click', () => {
+    dialog.close();
+  });
+  }
+
+  // Set up event listeners for each modal and dialog
+  setupModalAndDialog('modal1', 'dialog1');
+  setupModalAndDialog('modal2', 'dialog2');
+  setupModalAndDialog('modal3', 'dialog3');
+  setupModalAndDialog('modal4','dialog4');
+
+  // Add more modals and dialogs by calling setupModalAndDialog with different IDs
+
+</script>
 <style>
   p{
     color: red;
@@ -235,4 +280,7 @@
       inputText.value = text;
     }
   </script>
+    </div>
+    <?php include 'private-navbar-bottom.php'; ?>
+</body>
 </html>
