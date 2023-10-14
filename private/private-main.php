@@ -26,6 +26,36 @@ function getIconHTML($c_id) {
 
 ?>
 
+
+<?php
+require_once "../includes/dbh.inc.php";
+
+// Function to get the icon HTML based on the classroom status
+function getQuestion($c_id) {
+    global $pdo; // Access the global database connection
+
+    // Query the status for the specified c_id
+    $query = "SELECT status FROM classroom WHERE c_id = :c_id";
+    $stmt = $pdo->prepare($query);
+    $stmt->bindParam(':c_id', $c_id);
+    $stmt->execute();
+
+    // Fetch the status
+    $status = $stmt->fetchColumn();
+
+    if ($status == "occupied") {
+        return 'Are you done with your classes?';
+    } elseif ($status == "vacant") {
+        return 'Do You want to use this classroom?';
+    } else {
+        // Handle the case when the status is neither 'occupied' nor 'vacant'
+        return '<img src="unknown.svg" alt="Unknown Icon">';
+    }
+}
+
+?>
+
+
   <main class="main">
       <div class="div1" id="modal1">
         <div class="diva"><img src="https://images.pexels.com/photos/8423439/pexels-photo-8423439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1">
@@ -46,7 +76,7 @@ function getIconHTML($c_id) {
           <div class="dialog-content">
             <div class="display-close">x</div>
             <div class="display-header">
-              Do you want to use this room1?
+            <?php echo getQuestion(1); // Change the c_id as needed ?>
             </div>
             <div class="display-buttons">
               <form method="post" action="../private-includes/update.php">
@@ -72,14 +102,14 @@ function getIconHTML($c_id) {
      
     </div>
     </div>
-  </div>
 
+  </div>
   <div class="displays">
     <dialog class="dialog" id="dialog2">
       <div class="dialog-content">
       <div class="display-close">x</div>
       <div class="display-header">
-        Do you want to use this room3?
+      <?php echo getQuestion(2); // Change the c_id as needed ?>
       </div>
       <div class="display-buttons">
       <form method="post" action="../private-includes/update.php">
@@ -109,7 +139,7 @@ function getIconHTML($c_id) {
       <div class="dialog-content">
       <div class="display-close">x</div>
       <div class="display-header">
-        Do you want to use this room2?
+      <?php echo getQuestion(3); // Change the c_id as needed ?>
       </div>
       <div class="display-buttons">
       <form method="post" action="../private-includes/update.php">
