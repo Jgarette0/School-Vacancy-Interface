@@ -7,7 +7,7 @@ at statuses of each classroom (Vacant or Ocuppied)-->
     <div class="divb">
       <div class="classroom-name">Lecture room</div>
       <div class="status">
-      <div><img src="../images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
+      <div><img src="images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
       <label class="l-vacant"for="vacant">Vacant</label>
     </div>
     </div>
@@ -18,7 +18,7 @@ at statuses of each classroom (Vacant or Ocuppied)-->
     <div class="divb">
       <div class="classroom-name">TVL room</div>
       <div class="status">
-      <div><img src="../images/occupied-icon.svg" alt="example" class="occupied" id="occupied"></div>
+      <div><img src="images/occupied-icon.svg" alt="example" class="occupied" id="occupied"></div>
       <label class="l-occupied"for="occupied">Occupied</label>
     </div>
     </div>
@@ -29,7 +29,7 @@ at statuses of each classroom (Vacant or Ocuppied)-->
     <div class="divb">
       <div class="classroom-name">St. Augustine room</div>
       <div class="status">
-      <div><img src="../images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
+      <div><img src="images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
       <label class="l-vacant"for="vacant">Vacant</label>
     </div>
     </div>
@@ -40,7 +40,7 @@ at statuses of each classroom (Vacant or Ocuppied)-->
     <div class="divb">
       <div class="classroom-name">Computer Laboratory</div>
       <div class="status">
-      <div><img src="../images/occupied-icon.svg" alt="example" class="occupied" id="occupied"></div>
+      <div><img src="images/occupied-icon.svg" alt="example" class="occupied" id="occupied"></div>
       <label class="l-occupied"for="occupied">Occupied</label>
     </div>
     </div>
@@ -51,7 +51,7 @@ at statuses of each classroom (Vacant or Ocuppied)-->
     <div class="divb">
       <div class="classroom-name">Computer Laboratory</div>
       <div class="status">
-      <div><img src="../images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
+      <div><img src="images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
       <label class="l-vacant"for="vacant">Vacant</label>
     </div>
     </div>
@@ -62,7 +62,7 @@ at statuses of each classroom (Vacant or Ocuppied)-->
     <div class="divb">
       <div class="classroom-name">Computer Laboratory</div>
       <div class="status">
-      <div><img src="../images/occupied-icon.svg" alt="example" class="occupied" id="occupied"></div>
+      <div><img src="images/occupied-icon.svg" alt="example" class="occupied" id="occupied"></div>
       <label class="l-occupied"for="occupied">Occupied</label>
     </div>
     </div>
@@ -73,7 +73,7 @@ at statuses of each classroom (Vacant or Ocuppied)-->
     <div class="divb">
       <div class="classroom-name">Computer Laboratory</div>
       <div class="status">
-      <div><img src="../images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
+      <div><img src="images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
       <label class="l-vacant"for="vacant">Vacant</label>
     </div>
     </div>
@@ -84,7 +84,7 @@ at statuses of each classroom (Vacant or Ocuppied)-->
     <div class="divb">
       <div class="classroom-name">Computer Laboratory</div>
       <div class="status">
-      <div><img src="../images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
+      <div><img src="images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
       <label class="l-vacant"for="vacant">Vacant</label>
     </div>
     </div>
@@ -95,7 +95,7 @@ at statuses of each classroom (Vacant or Ocuppied)-->
     <div class="divb">
       <div class="classroom-name">Computer Laboratory</div>
       <div class="status">
-      <div><img src="../images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
+      <div><img src="images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
       <label class="l-vacant"for="vacant">Vacant</label>
     </div>
     </div>
@@ -106,7 +106,7 @@ at statuses of each classroom (Vacant or Ocuppied)-->
     <div class="divb">
       <div class="classroom-name">Computer Laboratory</div>
       <div class="status">
-      <div><img src="../images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
+      <div><img src="images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
       <label class="l-vacant"for="vacant">Vacant</label>
     </div>
     </div>
@@ -117,7 +117,7 @@ at statuses of each classroom (Vacant or Ocuppied)-->
     <div class="divb">
       <div class="classroom-name">Computer Laboratory</div>
       <div class="status">
-      <div><img src="../images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
+      <div><img src="images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
       <label class="l-vacant"for="vacant">Vacant</label>
     </div>
     </div>
@@ -128,7 +128,7 @@ at statuses of each classroom (Vacant or Ocuppied)-->
     <div class="divb">
       <div class="classroom-name">Computer Laboratory</div>
       <div class="status">
-      <div><img src="../images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
+      <div><img src="images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
       <label class="l-vacant"for="vacant">Vacant</label>
     </div>
     </div>

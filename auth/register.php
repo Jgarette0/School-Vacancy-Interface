@@ -11,7 +11,7 @@ require_once '../includes/login_view.inc.php';
   <title>Login here</title>
   <link rel="stylesheet" href="../css/user.css">
 </head>
-<body>"
+<body>
   <div class="register-container">
       <div class="header-div">
         <div class="logo-container">

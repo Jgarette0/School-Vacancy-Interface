@@ -32,7 +32,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
   if($errors){
     $_SESSION["errors_login"] = $errors;
 
-    header("Location: ../user/login.php");
+    header("Location: ../auth/login.php");
     die();
   } 
 
@@ -59,7 +59,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 }
 
 else{
-  header("Location: ../user/login.php");
+  header("Location: ../auth/login.php");
   die();
 
 }

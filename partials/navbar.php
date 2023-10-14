@@ -18,7 +18,7 @@
           </div>
         </a>
         <div class="search-container">
-          <form class="searchform" action="../search/search.php" method="post">
+          <form class="searchform" action="search/search.php" method="post">
             <a>
               <button type="submit" class="submits">
                 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
@@ -36,8 +36,8 @@
     <div class="account-list">
       <dialog id="theDialog">
         <div class="account">
-          <div><a href="../user/login.php"><button id="acc1">Login</button></a></div>
-          <div><a href="../user/register.php"><button id="acc2">Register</button></a></div>
+          <div><a href="auth/login.php"><button id="acc1">Login</button></a></div>
+          <div><a href="auth/register.php"><button id="acc2">Register</button></a></div>
           <div><a href=""><button id="acc3">Logout</button></a></div>
         </div>
       </dialog>

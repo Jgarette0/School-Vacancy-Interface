@@ -201,7 +201,7 @@ function setupModalAndDialog(modalId, dialogId) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 175px;
     box-sizing: border-box;
     overflow: hidden;
     margin: 0px 30px;
@@ -234,7 +234,7 @@ function setupModalAndDialog(modalId, dialogId) {
  
   }
   .div1{
-    margin-top: 75px;
+    margin-top: 10px;
    border-radius: 20px;
   }
   @media (max-width: 767px) {
@@ -281,6 +281,6 @@ function setupModalAndDialog(modalId, dialogId) {
     }
   </script>
     </div>
-    <?php include 'private-navbar-bottom.php'; ?>
+   
 </body>
 </html>

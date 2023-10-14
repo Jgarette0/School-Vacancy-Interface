@@ -36,7 +36,7 @@
     <div class="account-list">
       <dialog id="theDialog">
         <div class="account">
-          <div><a href="../final/index.php"><button id="acc3">Logout</button></a></div>
+          <div><a href="../index.php"><button id="acc3">Logout</button></a></div>
         </div>
       </dialog>
     </div>

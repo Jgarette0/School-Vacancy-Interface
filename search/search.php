@@ -16,7 +16,7 @@
 <body>
       <nav>
       <div class="navbar" id="navbar">
-      <a href="../final/index.php">
+      <a href="../index.php">
           <div class="profile-holder">
             <button id="profileBtn">
             <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
@@ -156,7 +156,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    height: 200px;
+    height: 175px;
     box-sizing: border-box;
     overflow: hidden;
     margin: 0px 30px;
@@ -189,7 +189,7 @@
  
   }
   .div1{
-    margin-top: 75px;
+    margin-top:10px;
    border-radius: 20px;
   }
   @media (max-width: 767px) {

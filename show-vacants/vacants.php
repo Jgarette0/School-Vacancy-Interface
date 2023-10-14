@@ -17,7 +17,7 @@
 <body>
       <nav>
       <div class="navbar" id="navbar">
-      <a href="../final/index.php">
+      <a href="../index.php">
           <div class="profile-holder">
             <button id="profileBtn">
             <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
@@ -67,7 +67,7 @@
     <label>
 			<input class="radio-input" type="radio" name="engine">
 			<span class="radio-tile">
-      <a href="../private/dashboard.php">
+      <a href="../index.php">
         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
         <lord-icon
       src="https://cdn.lordicon.com/slduhdil.json"
@@ -146,6 +146,10 @@
   .div1{
     background-color: aliceblue;
   }
+  nav{
+    z-index: 999;
+  }
+  
 </style>
 </body>
      </html>
