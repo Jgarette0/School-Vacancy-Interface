@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="layout">
+    <div class="carousel">
+      <div class="carousel-item">1</div>
+      <div class="carousel-item">2</div>
+      <div class="carousel-item">3</div>
+      <div class="carousel-item">4</div>
+      <div class="carousel-item">5</div>
+    </div>
+  </div>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .layout {
+      background-color: #181818;
+      width: 1000px; /* Desktop width */
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: scroll;
+      width: 100%; /* Allow the carousel to be 100% of the viewport width */
+    }
+
+    .carousel-item {
+      min-width: 100%; /* Ensure each item takes up the full width of the viewport */
+      flex-shrink: 0; /* Prevent items from shrinking */
+      background-color: #ccc;
+      text-align: center;
+      font-size: 2rem;
+      line-height: 100vh;
+    }
+
+    @media (max-width: 767px) {
+      /* Add your mobile layout styles here */
+      .carousel {
+        display: flex;
+        flex-direction: row; /* Display items in a row for horizontal scrolling */
+        overflow-x: auto; /* Enable horizontal scrolling for the carousel on mobile devices */
+        scroll-snap-type: x mandatory; /* Enable snapping to each item */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+      }
+    }
+  </style>
+</body>
+</html>
+s
