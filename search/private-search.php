@@ -1,3 +1,12 @@
+<!--
+  This code handles teachers search page, it can suggest classrooms, occupy a classroom etc.
+
+  #Daghang usbononon:
+      -Ilisdan ang question according sa status 
+      -usbon ang classroom names
+      -Ibalhin ang uban codes depende sa PL lannguage such as (css/javascript/php)
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -190,8 +199,8 @@ function setupModalAndDialog(modalId, dialogId) {
   transform: translateX(-50%);
   color: var(--light-color);
   padding: 5px;
-  border-radius: 25%; /* If you want to make the icon circular */
-  z-index: 1; /* Ensure the icon is above the image */
+  border-radius: 25%;
+  z-index: 1; 
   cursor: pointer;
 
 }

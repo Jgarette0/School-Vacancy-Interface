@@ -1,11 +1,27 @@
       
-      <!--
-      *A top navigation bar
-      *a search input where a user can search classrooms
-      * lord icon - is an free icons from lordicon.com
-      *A search input that search data through post method
-      *Below the navbar is an Dialog - model, which popup when the avatar icon is clicked
-      s-->
+  <!--
+        *A top navigation bar
+        *a search input where a user can search classrooms
+        *A search input that search data through post method
+        *Below the navbar is an Dialog - model, which popup when 
+        the avatar icon is clicked(js/navbbar.js)
+  -->
+
+  <!-- 
+      This modal will be handle the following:
+      Registration
+      Login
+      Logout
+
+      TODO: change the context inside
+              auth/login.php
+              auth/register.php
+              auth/logout.php
+              into basic login || registration form para dili complex
+
+              !if  nanay basic na login || rergistration form pede na idelete ang
+              folder na 'Includes'
+  -->
    <nav>
       <div class="navbar" id="navbar">
         <a>

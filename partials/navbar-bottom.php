@@ -4,6 +4,16 @@
       *a navagation bar handles home, list and settings
       *lord icon- is an open source icons
     -->
+
+    <!--
+      Kani nga bottom navbar kay maghandle sa radio: Home (default)
+      Vacants: makita unsay bakante na mga classroom
+      Setting || undecided.
+
+      purpose: dali ra maka access sa uban feature ug page
+
+      !pede rani maremove na feature kay dili mani priority
+    -->
 <nav class="navbarBottom">
 <div class="radio-container">
 <div class="radio-inputs">

@@ -6,7 +6,14 @@
       dire makita ang display sa image, name ug status sa classroom
       -div1,diva and divb is for styling purposes
       -div1 is container and diva and divb kay child element sa div1
-      -l-occupied 
+      -<label class="l-vacant"for="vacant">Vacant</label> kani nga lines
+      kay wala nay gamit kay icon naman gi gamit
+-->
+<!--
+  TO DO: -ilisdan ang icon according to the real status in classroom sa database
+          Parihas sa dashboard.php / private-main.php
+         -E remove ang label
+         -Ilista tanang classroom
 -->
   <div class="div1">
     <div class="diva"><img src="https://images.pexels.com/photos/8423439/pexels-photo-8423439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="example" class="img1"></div>
@@ -14,7 +21,7 @@
       <div class="classroom-name">Lecture room</div>
       <div class="status">
       <div><img src="images/vacant-icon.svg" alt="example" class="vacant" id="vacant"></div>
-      
+      <label class="l-vacant"for="vacant">Vacant</label>
     </div>
     </div>
   </div>

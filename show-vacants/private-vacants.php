@@ -1,3 +1,7 @@
+<!--
+  #This will handle para makita tanang bakanteng classroom para sa maestra
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

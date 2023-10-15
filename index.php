@@ -18,7 +18,7 @@
   <?php include 'partials/main.php'; ?>
   <?php include 'partials/navbar-bottom.php'; ?>
   <?php include 'partials/map.php'; ?>
-
+  
 </body>
 <script src="js/navbar.js"></script>
 <script src="js/user.js"></script>

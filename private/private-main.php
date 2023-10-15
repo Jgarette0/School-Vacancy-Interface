@@ -64,7 +64,7 @@ function getQuestion($c_id) {
           <div class="classroom-name">Lecture room</div>
           <div class="status">
             <div>
-            <?php echo getIconHTML(1); // Change the c_id as needed ?>
+            <?php echo getIconHTML(1);   ?>
             </div>
            
           </div>
@@ -76,7 +76,7 @@ function getQuestion($c_id) {
           <div class="dialog-content">
             <div class="display-close">x</div>
             <div class="display-header">
-            <?php echo getQuestion(1); // Change the c_id as needed ?>
+            <?php echo getQuestion(1);   ?>
             </div>
             <div class="display-buttons">
               <form method="post" action="../private-includes/update.php">
@@ -98,7 +98,7 @@ function getQuestion($c_id) {
     <div class="divb">
       <div class="classroom-name">Computer Laboratory</div>
       <div class="status">
-      <div>            <?php echo getIconHTML(2); // Change the c_id as needed ?></div>
+      <div>            <?php echo getIconHTML(2);   ?></div>
      
     </div>
     </div>
@@ -109,7 +109,7 @@ function getQuestion($c_id) {
       <div class="dialog-content">
       <div class="display-close">x</div>
       <div class="display-header">
-      <?php echo getQuestion(2); // Change the c_id as needed ?>
+      <?php echo getQuestion(2);   ?>
       </div>
       <div class="display-buttons">
       <form method="post" action="../private-includes/update.php">
@@ -129,7 +129,7 @@ function getQuestion($c_id) {
     <div class="divb">
       <div class="classroom-name">TVL room</div>
       <div class="status">
-      <div>            <?php echo getIconHTML(3); // Change the c_id as needed ?></div>
+      <div>            <?php echo getIconHTML(3);   ?></div>
      
     </div>
     </div>
@@ -139,7 +139,7 @@ function getQuestion($c_id) {
       <div class="dialog-content">
       <div class="display-close">x</div>
       <div class="display-header">
-      <?php echo getQuestion(3); // Change the c_id as needed ?>
+      <?php echo getQuestion(3);   ?>
       </div>
       <div class="display-buttons">
       <form method="post" action="../private-includes/update.php">

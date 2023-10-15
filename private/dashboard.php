@@ -1,3 +1,7 @@
+<!--
+  #This code will handle all teacher's activity and interfaces
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

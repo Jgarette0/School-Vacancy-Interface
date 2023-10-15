@@ -1,29 +1,29 @@
 <?php
-require_once '../includes/dbh.inc.php'; // Include your database connection code
+require_once '../includes/dbh.inc.php'; // database connection
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
-        // Retrieve the classroomId from the POST data
+        // Kuhaon ang c_id
         $classroomId = $_POST['classroomId'];
 
-        // Fetch the current status from the database
+        // kuhaon ang status according sa classroom id
         $stmt = $pdo->prepare("SELECT status FROM classroom WHERE c_id = :classroomId");
         $stmt->bindParam(':classroomId', $classroomId, PDO::PARAM_INT);
         $stmt->execute();
 
         $currentStatus = $stmt->fetchColumn();
 
-        // Toggle the status between "vacant" and "occupied"
+        // if current status is vacant, when clicked it will change to occupied vice versa
         $newStatus = ($currentStatus === 'vacant') ? 'occupied' : 'vacant';
 
-        // Prepare and execute the SQL update query
+        // updating status
         $stmt = $pdo->prepare("UPDATE classroom SET status = :newStatus WHERE c_id = :classroomId");
         $stmt->bindParam(':newStatus', $newStatus, PDO::PARAM_STR);
         $stmt->bindParam(':classroomId', $classroomId, PDO::PARAM_INT);
 
         if ($stmt->execute()) {
             header("Location: ../private/dashboard.php");
-            echo '<h1>Status updated successfully.</h1>';
+            echo '<h1>Status updated successfully.</h1>'; //this code is doesn't work(pede ra tang2on)
 
         } else {
             echo 'Error updating status.';
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo 'Error updating status.';
     }
 } else {
-    // Handle invalid requests
+    // invalid requests
     echo 'Invalid request.';
 }
 

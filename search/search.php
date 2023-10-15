@@ -1,3 +1,8 @@
+
+<!--
+  This will handle public static search page
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
