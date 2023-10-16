@@ -86,7 +86,7 @@
 		<label>
 			<input checked="" class="radio-input" type="radio" name="engine">
 			<span class="radio-tile">
-      <a href="../show-vacants/private-vacants.php">
+      <a href="../show-vacants/vacants.php">
 				<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
         <lord-icon
           src="https://cdn.lordicon.com/zncllhmn.json"
