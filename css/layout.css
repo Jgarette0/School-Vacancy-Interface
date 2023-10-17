@@ -1,6 +1,6 @@
 
 body {
-  background-color:#181818;
+  background-color:#181818 !important;
   margin: 0;
   padding: 0;
   }
@@ -10,14 +10,12 @@ body {
    /* background-image: url('../../images/cc.svg'); */
   
   @media (max-width: 767px) {
-    /* Add your mobile layout styles here */
-    .top-view{
-      display: flex;
-      justify-content: center;
+    /* Add your mobile layout styles here */body{
       overflow-y: hidden;
+    }
+    .top-view{
       overflow-x: scroll;
-      width: 250%;
-  
+
     }
     .layout-container{
       background-size: cover; 
@@ -28,7 +26,8 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top:200px;
+      margin-top:150px;
+      overflow-x: scroll;
 
       }
       .layout{
@@ -184,10 +183,15 @@ body {
         width: 20px;
         border-left:1px  solid #fbfbfb;
       }
-      button{
+      
+      .blank{
         width: 100%;
         height: 100%;
         background-color: rgb(153, 204, 153);
+        cursor: pointer;
+      }
+     .blank:hover{
+        background-color: rgb(95, 204, 95);
       }
     
     
@@ -196,182 +200,188 @@ body {
   /* Desktop Layout */
   @media (min-width: 768px) {
     /* Add your desktop layout styles here */
-  .top-view{
-    display: flex;
-    justify-content: center;;
-  }
-   /* background-image: url('../../images/cc.svg'); */
-  .layout-container{
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  height: 440px;
-  width: 1000px;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top:80px;
-  border: 1px solid #fbfbfb;
-  }
-  .layout{
-    height: 96%;
-    width: 980px;
-    display: flex;
-    flex-direction: column;
-  }
-  .col1{
-    height: 45%;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  .col2{
-  height: 60%;
-  
-  }
-  .col1{
-    display: flex;
-    flex-direction: row;
-  }
-  .row1{
-  width: 12%;
-  margin-left: 3.5%;
-  border: 1px solid #fbfbfb;
-  }
-  .row2{
-  width: 85%;
-  height: 55%;
-  margin-top: 5%;
-  border-top: 1px solid #fbfbfb;
-  }
-  .row3{
-    width: 12%;
-    border: 1px solid #fbfbfb;
-  }
-  .col2{
-    display: flex;
-    flex-direction: row;
-    border:none;
-  }
-  .rowb1{
-    width: 14.2%;
-    display: flex;
-    flex-direction: row;
-  }
-  .side-classrooms{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top:5%;
-    height: 98%;
-  }
-  .side-alley{
-    width: 20%;
-    border: 1px solid #fbfbfb;
-    height:100%;
-  }
-  /*this is the classroom layout */
-  .side-classroom{
-    height: 100%;
-    width: 100%;
-    border:1px solid #fbfbfb;
-  }
-  .stairs-classroom{
-    height: 61%;
-    width: 72.5%;
-    border:1px solid #fbfbfb;
+    body{
+      overflow-y: hidden;
+    }
+    .top-view{
+      display: flex;
+      justify-content: center;;
+    }
+     /* background-image: url('../../images/cc.svg'); */
+    .layout-container{
 
-  }
-  .stairs-side{
-    margin-top: 15%;
-    height: 45%;
-    width: 45%;
-    border:1px solid #fbfbfb;
-    display: flex;
-    flex-direction: row;
-    border:1px  solid #fbfbfb;
-    margin-bottom: 1px;
-  }
-  .stairs-step1{
-      width: 30%;
-      border-right:1px  solid #fbfbfb;
-  
-  }
-  .stairs-step2{
-    border-top:5px  solid #fbfbfb;
-    height: 50%;
-    margin-top: 47%;
-    width: 70%;
-  }
-  .row2{
-    display: flex;
-    flex-direction: column;
-  }
-  .main-col1{
+    height: 70vh;
     width: 100%;
-    height: 75%;
     display: flex;
-    flex-direction: row;
-  }
-  .main-col2{
-    height: 25%;
-    width: 100%;
-    border-bottom: 1px rgb(255, 255, 255) solid;
-  }
-  .main-classrooms1{
-    width: 100%;
-    border: 1px rgb(255, 255, 255) solid;
-    height: 100%;
-    margin-right:7%;
-    display: flex;
-  
-  }
-  .main-classrooms2{
-    width: 100%;
-    border: 1px rgb(255, 255, 255) solid;
-    height: 100%;
-    margin-left:7%;
-    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+    }
+    .layout{
+      height: 70vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .col1{
+      height: 45%;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    .col2{
+    height: 60%;
     
-  }
-  .main-classroom{
-    width:100%;
-    height:100%;
-   
-    border:1px solid #fbfbfb;
-  }
+    }
+    .col1{
+      display: flex;
+      flex-direction: row;
+    }
+    .row1{
+    width: 12%;
+    margin-left: 3.5%;
+    border: 1px solid #fbfbfb;
+    }
+    .row2{
+    width: 85%;
+    height: 55%;
+    margin-top: 5%;
+    border-top: 1px solid #fbfbfb;
+    }
+    .row3{
+      width: 12%;
+      border: 1px solid #fbfbfb;
+    }
+    .col2{
+      display: flex;
+      flex-direction: row;
+      border:none;
+    }
+    .rowb1{
+      width: 14.2%;
+      display: flex;
+      flex-direction: row;
+    }
+    .side-classrooms{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin-top:5%;
+      height: 98%;
+    }
+    .side-alley{
+      width: 20%;
+      border: 1px solid #fbfbfb;
+      height:100%;
+    }
+    /*this is the classroom layout */
+    .side-classroom{
+      height: 100%;
+      width: 95%;
+      border:1px solid #fbfbfb;
+      margin-left: 5%;
+    }
+    .stairs-classroom{
+      height: 61%;
+      width: 72.5%;
+      border:1px solid #fbfbfb;
   
-  .stairs-classroom2{
-    height: 61%;
-    width: 72.5%;
-    border:1px solid #fbfbfb;
-    margin-left: 27.5%;
-  }
-  
-  .stairs-side2{
-    margin-top: 15%;
-    height: 45%;
-    width: 45%;
-    border:1px solid #fbfbfb;
-    display: flex;
-    flex-direction: row;
-    border:1px  solid #fbfbfb;
-    margin-bottom: 1px;
-    margin-left: 55%;
-  }
-  .stairs-step1a{
-    border-top:5px  solid #fbfbfb;
-    height: 50%;
-    margin-top: 47%;
-    width: 65%;
-  }
-  .stairs-step2b{
-    width: 35%;
-    border-left:1px  solid #fbfbfb;
-  }
-  button{
-    width: 100%;
-    height: 100%;
-    background-color: rgb(153, 204, 153);
-  }
+    }
+    .stairs-side{
+      margin-top: 15%;
+      height: 45%;
+      width: 45%;
+      border:1px solid #fbfbfb;
+      display: flex;
+      flex-direction: row;
+      border:1px  solid #fbfbfb;
+      margin-bottom: 1px;
+    }
+    .stairs-step1{
+        width: 30%;
+        border-right:1px  solid #fbfbfb;
+    
+    }
+    .stairs-step2{
+      border-top:5px  solid #fbfbfb;
+      height: 50%;
+      margin-top: 47%;
+      width: 70%;
+    }
+    .row2{
+      display: flex;
+      flex-direction: column;
+    }
+    .main-col1{
+      width: 100%;
+      height: 75%;
+      display: flex;
+      flex-direction: row;
+    }
+    .main-col2{
+      height: 25%;
+      width: 100%;
+      border-bottom: 1px rgb(255, 255, 255) solid;
+    }
+    .main-classrooms1{
+      width: 100%;
+      border: 1px rgb(255, 255, 255) solid;
+      height: 100%;
+      margin-right:7%;
+      display: flex;
+    
+    }
+    .main-classrooms2{
+      width: 100%;
+      border: 1px rgb(255, 255, 255) solid;
+      height: 100%;
+      margin-left:7%;
+      display: flex;
+      
+    }
+    .main-classroom{
+      width:100%;
+      height:100%;
+     
+      border:1px solid #fbfbfb;
+    }
+    
+    .stairs-classroom2{
+      height: 61%;
+      width: 72.5%;
+      border:1px solid #fbfbfb;
+      margin-left: 27.5%;
+    }
+    
+    .stairs-side2{
+      margin-top: 15%;
+      height: 45%;
+      width: 45%;
+      border:1px solid #fbfbfb;
+      display: flex;
+      flex-direction: row;
+      border:1px  solid #fbfbfb;
+      margin-bottom: 1px;
+      margin-left: 55%;
+    }
+    .stairs-step1a{
+      border-top:5px  solid #fbfbfb;
+      height: 50%;
+      margin-top: 47%;
+      width: 65%;
+    }
+    .stairs-step2b{
+      width: 35%;
+      border-left:1px  solid #fbfbfb;
+    }
+    
+    button{
+      width: 100%;
+      height: 100%;
+      background-color: rgb(153, 204, 153);
+      cursor: pointer;
+    }
+    button:hover{
+      background-color: rgb(95, 204, 95);
+    }
 
 }

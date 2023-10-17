@@ -4,21 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../css/navbar.css">
-<link rel="stylesheet" href="../css/layout.css">
-<link rel="stylesheet" href="../css/responsive.css">
-<link rel="stylesheet" href="../css/navbar-bottom.css">
-<link rel="stylesheet" href="../css/map.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/navbar-bottom.css">
 </head>
-<body>
-  <?php include '../partials/navbar.php'; ?>
-  
-  <?php include '../partials/navbar-bottom.php'; ?>
-  
-</body>
-<script src="../js/navbar.js"></script>
-<script src="../js/user.js"></script>
+  <body>
+    <?php include '../partials/navbar.php';?>
+    <?php include '../partials/navbar-bottom.php';?>
+    <div class="top-view">
+    <div class="layout-container"> 
+      <div class="layout">
+        <div class="col1">
+          <div class="row1">
+            <div class="stairs-classroom">
+              <button class="blank">Room 6</button>
+            </div>
+            <div class="stairs-side">
+              <div class="stairs-step1">
+              </div>
+              <div class="stairs-step2">
+              </div>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="main-col1">
+              <div class="main-classrooms1">
+                <div class="main-classroom">
+                  <button class="blank">Room 1</button>
+                </div>
+                <div class="main-classroom">
+                  <button class="blank">Room 2</button>
+                </div>
+                <div class="main-classroom">
+                  <button class="blank">Room 3</button>
+                </div>
+              </div>
+              <div class="main-classrooms2">
+                <div class="main-classroom">
+                  <button class="blank">Room 4</button>
+                </div>
+                <div class="main-classroom">
+                  <button class="blank">Room 5</button>
+                </div>
+                <div class="main-classroom">
+                  <button class="blank">Computer Laboratory</button>
+                </div>
+              </div>
+            </div>
+            <div class="main-col2"></div>
+          </div>
+          <div class="row3">
+            <div class="stairs-classroom2">
+              <button class="blank">Lecture</button>
+            </div>
+            <div class="stairs-side2">
+              <div class="stairs-step1a">
+              </div>
+              <div class="stairs-step2b">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col2">
+          <div class="rowb1">
+            <div class="side-classrooms">
+              <div class="side-classroom">
+                <button class="blank">SH1</button>
+              </div>
+              <div class="side-classroom">
+                <button class="blank">SH2</button>
+              </div>
+              <div class="side-classroom">
+                <button class="blank">SH3</button>
+              </div>
+            </div>
+            <div class="side-alley">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
 </html>
