@@ -200,12 +200,9 @@ body {
   /* Desktop Layout */
   @media (min-width: 768px) {
     /* Add your desktop layout styles here */
-    body{
-      overflow-y: hidden;
-    }
+
     .top-view{
-      display: flex;
-      justify-content: center;;
+
     }
      /* background-image: url('../../images/cc.svg'); */
     .layout-container{
