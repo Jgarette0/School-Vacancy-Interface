@@ -27,7 +27,7 @@
             <lord-icon
                 src="https://cdn.lordicon.com/zxvuvcnc.json"
                 trigger="click"
-                style="width:40px;height:40px; margin-bottom:-3px;">
+                style="width:25px;height:25px;">
             </lord-icon>
             </button>
           </div>
@@ -61,7 +61,7 @@
               trigger="click"
               colors="primary:#171717"
               state="hover-2"
-              style="width:32px;height:32px;  margin-bottom: -5px">
+              style="width:32px;height:32px;">
             </lord-icon>
 					<span class="radio-label">Settings</span>
           </a>
@@ -77,7 +77,7 @@
       trigger="click"
       colors="primary:#171717"
       state="hover-3"
-      style="width:32px;height:32px; margin-bottom: -5px">
+      style="width:32px;height:32px;">
     </lord-icon>
 				<span class="radio-label">Home</span>
         </a>
@@ -94,7 +94,7 @@
           trigger="click"
           colors="primary:#171717"
           state="hover"
-          style="width:32px;height:32px; margin-bottom: -5px">
+          style="width:32px;height:32px;">
         </lord-icon>
     <span class="radio-label">Vacants</span>	
     </a>
@@ -127,7 +127,7 @@
         foreach($results as $row){
            
           echo '<div class="div1" id="modal1">';
-          echo '<div class="diva"><img src="example'. $row["c_id"] . '.png" alt="example" class="img1"></div>';
+          echo '<div class="diva"><img src="../images/img'. $row["c_id"] . '.jpg" alt="example" class="img1"></div>';
           echo '<div class="divb">';
           echo '<div class="classroom-name">' . htmlspecialchars($row["classroomName"]) . '</div>';
           echo '<div>';
@@ -217,6 +217,7 @@ function setupModalAndDialog(modalId, dialogId) {
   cursor: pointer;
 
 }
+
   .classroom-btn{
     display: flex;
     flex-direction: row;
@@ -280,6 +281,9 @@ function setupModalAndDialog(modalId, dialogId) {
     border-radius: 25px;
 
   }
+  .div1{
+  margin-top: 75px;
+}
 }
 
 /* Desktop Layout */

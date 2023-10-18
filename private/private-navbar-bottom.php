@@ -16,7 +16,7 @@
               trigger="click"
               colors="primary:#171717"
               state="hover-2"
-              style="width:32px;height:32px; margin-bottom: 4px">
+              style="width:32px;height:32px;">
             </lord-icon>
 					<span class="radio-label">Settings</span>
 				</span>
@@ -31,7 +31,7 @@
       trigger="click"
       colors="primary:#171717"
       state="hover-3"
-      style="width:32px;height:32px; margin-bottom: 4px">
+      style="width:32px;height:32px;">
     </lord-icon>
 				<span class="radio-label">Home</span>
 			</span>
@@ -47,7 +47,7 @@
           trigger="click"
           colors="primary:#171717"
           state="hover"
-          style="width:32px;height:32px; margin-bottom: -5px">
+          style="width:32px;height:32px;">
         </lord-icon>
     <span class="radio-label">Vacants</span>	
     </a>

@@ -4,7 +4,9 @@
   --dark-color: #171717;
   --light-color: #fafafa;
 }
-
+body{
+  overflow-y: hidden;
+}
 .input {
   display: flex;
   flex-direction: column;
@@ -14,7 +16,7 @@
   border-radius: 5px;
   position: fixed;
   right: 10px;
-  bottom: 30%;
+  bottom: 10%;
 }
 
 .value {
@@ -81,6 +83,7 @@
     right: 10px;
     bottom: 30%;
   }
+
 .map-container{
   display: flex;
   flex-direction: row;

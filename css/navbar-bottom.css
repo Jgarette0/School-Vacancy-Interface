@@ -39,7 +39,10 @@
 .radio-input:checked + .radio-tile .radio-label {
   color: #00a669;
 }
-
+.radio-inputs span:hover{
+  border-color: #00a669;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #89d7b3;
+}
 .radio-input:focus + .radio-tile {
   border-color: #00a669;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #89d7b3;
@@ -56,6 +59,12 @@
   transition: 0.15s ease;
   cursor: pointer;
   position: relative;
+}
+.radio-tile a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .radio-tile:before {
@@ -119,7 +128,6 @@
       flex-direction: row-reverse;
       opacity: 0;
   }
-  
   }
   .radio-tile a{
     margin: none;

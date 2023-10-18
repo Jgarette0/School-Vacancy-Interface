@@ -28,13 +28,13 @@
             <lord-icon
                 src="https://cdn.lordicon.com/zxvuvcnc.json"
                 trigger="click"
-                style="width:40px;height:40px; margin-bottom:-3px;">
+                style="width:25px;height:25px;">
             </lord-icon>
             </button>
           </div>
         </a>
         <div class="search-container">
-          <form class="searchform" action="../search/search.php" method="post">
+          <form class="searchform" action='../search/search.php' method="post">
             <a>
               <button type="submit" class="submits">
                 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>

@@ -1,18 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="../css/layout.css">
-  <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/navbar-bottom.css">
-  <link rel="stylesheet" href="../css/map.css">
+  <link rel="stylesheet" href="../../css/layout.css">
+  <link rel="stylesheet" href="../../css/navbar.css">
+  <link rel="stylesheet" href="../../css/navbar-bottom.css">
+  <link rel="stylesheet" href="../../css/map.css">
 </head>
   <body>
   <nav>
       <div class="navbar" id="navbar">
-      <a href="../index.php">
+      <a href="../../index.php">
           <div class="profile-holder">
             <button id="profileBtn">
             <script src="https://cdn.lordicon.com/lordicon-1.1.0.js"></script>
@@ -25,7 +26,7 @@
           </div>
         </a>
         <div class="search-container">
-          <form class="searchform" action="../search/search.php" method="post">
+          <form class="searchform" action="../../search/search.php" method="post">
             <a>
               <button type="submit" class="submits">
                 <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
@@ -62,7 +63,7 @@
     <label>
 			<input class="radio-input" type="radio" name="engine">
 			<span class="radio-tile">
-      <a href="../index.php">
+      <a href="../../index.php">
         <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
         <lord-icon
       src="https://cdn.lordicon.com/slduhdil.json"
@@ -79,7 +80,7 @@
 		<label>
 			<input class="radio-input" type="radio" name="engine">
 			<span class="radio-tile">
-      <a href="../show-vacants/vacants.php">
+      <a href="../../show-vacants/vacants.php">
 				<script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
         <lord-icon
           src="https://cdn.lordicon.com/zncllhmn.json"
@@ -140,6 +141,8 @@
           <div class="row3">
             <div class="stairs-classroom2">
               <button class="blank">Lecture</button>
+              
+
             </div>
             <div class="stairs-side2">
               <div class="stairs-step1a">
@@ -171,15 +174,15 @@
   </div>
   <div class="input">
     <button class="value" id="btn3rdFloor">
-    <img src="../images/stairs-up-dark.svg" alt="stairs-up">
+    <img src="../../images/stairs-up-dark.svg" alt="stairs-up">
       3rd Floor
     </button>
     <button class="value" id="btn2ndFloor">
-      <img src="../images/stairs-dark.svg" alt="stairs">
+      <img src="../../images/stairs-dark.svg" alt="stairs">
         2nd Floor
       </button>
     <button class="value" id="btn1stFloor">
-      <img src="../images/stairs-down-dark.svg" alt="stairs-down">
+      <img src="../../images/stairs-down-dark.svg" alt="stairs-down">
         1st Floor
       </button>
   </div>
@@ -319,7 +322,7 @@
         </div>
         <div class="row3">
           <div class="stairs-classroom2">
-            <button class="blank">Lecture</button>
+        <button class="blank">Lecture</button>
           </div>
           <div class="stairs-side2">
             <div class="stairs-step1a">
@@ -332,6 +335,7 @@
     </div>
   </div>
 </div>
+
       `;
     });
 
@@ -414,5 +418,9 @@
       `;
     });
   </script>
+
+
+
+
   </body>
 </html>

@@ -26,7 +26,7 @@
             <lord-icon
                 src="https://cdn.lordicon.com/zxvuvcnc.json"
                 trigger="click"
-                style="width:40px;height:40px; margin-bottom:-3px;">
+                style="width:25px;height:25px;">
             </lord-icon>
             </button>
           </div>
@@ -60,7 +60,7 @@
               trigger="click"
               colors="primary:#171717"
               state="hover-2"
-              style="width:32px;height:32px;  margin-bottom: -5px">
+              style="width:32px;height:32px;">
             </lord-icon>
 					<span class="radio-label">Settings</span>
           </a>
@@ -76,7 +76,7 @@
       trigger="click"
       colors="primary:#171717"
       state="hover-3"
-      style="width:32px;height:32px; margin-bottom: -5px">
+      style="width:32px;height:32px;">
     </lord-icon>
 				<span class="radio-label">Home</span>
         </a>
@@ -93,7 +93,7 @@
           trigger="click"
           colors="primary:#171717"
           state="hover"
-          style="width:32px;height:32px; margin-bottom: -5px">
+          style="width:32px;height:32px;">
         </lord-icon>
     <span class="radio-label">Vacants</span>	
     </a>

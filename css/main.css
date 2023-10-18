@@ -48,8 +48,6 @@ body{
   font-family: 'Roboto', sans-serif;;
   font-weight: bold;
   color:var(--dark-color);
-
-  
 }
 
 .diva{
@@ -58,7 +56,7 @@ body{
   margin: 2px;
   box-sizing: border-box;
   overflow: hidden;
-  border-radius: 25px 25px 10px 10px;
+  border-radius: 12px 12px 8px 8px;
 }
 .divb{
   height: 18%;

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -319,7 +320,7 @@
         </div>
         <div class="row3">
           <div class="stairs-classroom2">
-            <button class="blank">Lecture</button>
+            <button class="blank" id="modal1">Lecture</button>
           </div>
           <div class="stairs-side2">
             <div class="stairs-step1a">
@@ -414,5 +415,6 @@
       `;
     });
   </script>
+ 
   </body>
 </html>
