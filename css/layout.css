@@ -131,11 +131,11 @@ body {
       .main-col2{
         height: 20px;
         width: 100%;
-        border-bottom: 1px rgb(255, 255, 255) solid;
+        border-bottom: 1px #fbfbfb solid;
       }
       .main-classrooms1{
         width: 100%;
-        border: 1px rgb(255, 255, 255) solid;
+        border: 1px #fbfbfb solid;
         height: 100%;
         margin-right: 48px;
         display: flex;
@@ -143,7 +143,7 @@ body {
       }
       .main-classrooms2{
         width: 100%;
-        border: 1px rgb(255, 255, 255) solid;
+        border: 1px #fbfbfb solid;
         height: 100%;
         margin-left: 48px;
         display: flex;
@@ -192,6 +192,19 @@ body {
       }
      .blank:hover{
         background-color: rgb(95, 204, 95);
+      }
+ 
+      ::-webkit-scrollbar {
+        width: 0.1em;
+      }
+
+
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: transparent;
       }
     
     
