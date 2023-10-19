@@ -4,9 +4,7 @@
   --dark-color: #171717;
   --light-color: #fafafa;
 }
-body{
-  overflow-y: hidden;
-}
+
 .input {
   display: flex;
   flex-direction: column;

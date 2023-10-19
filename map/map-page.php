@@ -183,7 +183,13 @@
         1st Floor
       </button>
   </div>
+<script>
+  const blanks = document.querySelector('.blank');
 
+  blanks.addEventListener('click', () => {
+    blanks.innerHTML = 'hello';
+  });
+</script>
   <script>
     // JavaScript to change the content based on button clicks
     const topView = document.querySelector(".top-view");
@@ -414,5 +420,10 @@
       `;
     });
   </script>
+  <style>
+    body{
+  overflow-y: hidden;
+}
+  </style>
   </body>
 </html>
