@@ -16,7 +16,7 @@
 <!--
   This is a map container button
 -->
-<a href="../map/private-map-layout.php">
+<a href="../map/map-page.php">
   <div class="map-container">
     <button class="map" id="map">Map
       <img src="../images/map-light.svg" alt="map-dark">

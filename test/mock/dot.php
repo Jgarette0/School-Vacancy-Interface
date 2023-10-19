@@ -1,7 +1,7 @@
 <?php
 require_once "../../includes/dbh.inc.php";
 
-// Function to get the icon HTML based on the classroom status
+// Function to display status color based on the classroom status in database
 function getColor($c_id) {
     global $pdo; // Access the global database connection
 
@@ -20,7 +20,7 @@ function getColor($c_id) {
         return 'class="green"';
     } else {
         // Handle the case when the status is neither 'occupied' nor 'vacant'
-        return 'class="green"';
+        return 'class="gray"';
     }
 }
 

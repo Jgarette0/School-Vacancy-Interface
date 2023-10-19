@@ -66,6 +66,7 @@
   filter: blur(1px);
   transform: scale(0.95,0.95);
 }
+
 /* Mobile Layout */
 @media (max-width: 767px) {
   /* Add your mobile layout styles here */
@@ -165,3 +166,5 @@
   }
 
 }
+
+

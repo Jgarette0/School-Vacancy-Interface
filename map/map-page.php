@@ -1,3 +1,4 @@
+<?php include 'map-classroom-status.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,8 +101,7 @@
       <div class="layout">
         <div class="col1">
           <div class="row1">
-            <div class="stairs-classroom">
-              <button class="blank">Room 6</button>
+            <div class="stairs-classroom"style="border:none;">
             </div>
             <div class="stairs-side">
               <div class="stairs-step1">
@@ -114,32 +114,31 @@
             <div class="main-col1">
               <div class="main-classrooms1">
                 <div class="main-classroom">
-                  <button class="blank">Room 1</button>
+                  <button <?php echo getColor(1);?>>Room 1</button>
                 </div>
                 <div class="main-classroom">
-                  <button class="blank">Room 2</button>
+                  <button <?php echo getColor(2);?>>Room 2</button>
                 </div>
                 <div class="main-classroom">
-                  <button class="blank">Room 3</button>
+                  <button <?php echo getColor(3);?>>Room 3</button>
                 </div>
               </div>
               <div class="main-classrooms2">
                 <div class="main-classroom">
-                  <button class="blank">Room 4</button>
+                  <button <?php echo getColor(1);?>>Room 4</button>
                 </div>
                 <div class="main-classroom">
-                  <button class="blank">Room 5</button>
+                  <button <?php echo getColor(2);?>>Room 5</button>
                 </div>
                 <div class="main-classroom">
-                  <button class="blank">Computer Laboratory</button>
+                  <button <?php echo getColor(1);?>>Room 6</button>
                 </div>
               </div>
             </div>
             <div class="main-col2"></div>
           </div>
           <div class="row3">
-            <div class="stairs-classroom2">
-              <button class="blank">Lecture</button>
+            <div class="stairs-classroom2"style="border:none;">
             </div>
             <div class="stairs-side2">
               <div class="stairs-step1a">
@@ -153,13 +152,13 @@
           <div class="rowb1">
             <div class="side-classrooms">
               <div class="side-classroom">
-                <button class="blank">SH1</button>
+                <button <?php echo getColor(3);?>>Room 7</button>
               </div>
               <div class="side-classroom">
-                <button class="blank">SH2</button>
+                <button <?php echo getColor(1);?>>Room 8</button>
               </div>
               <div class="side-classroom">
-                <button class="blank">SH3</button>
+                <button <?php echo getColor(2);?>>Room 9</button>
               </div>
             </div>
             <div class="side-alley">
@@ -208,7 +207,7 @@
         <div class="col1">
           <div class="row1">
             <div class="stairs-classroom">
-              <button class="blank">Room 6</button>
+            <button <?php echo getColor(10);?>>Room 10</button>
             </div>
             <div class="stairs-side">
               <div class="stairs-step1">
@@ -221,24 +220,24 @@
             <div class="main-col1">
               <div class="main-classrooms1">
                 <div class="main-classroom">
-                  <button class="blank">Room 1</button>
+                  <button <?php echo getColor(11);?>>Room 11</button>
                 </div>
                 <div class="main-classroom">
-                  <button class="blank">Room 2</button>
+                  <button <?php echo getColor(12);?>>Room 12</button>
                 </div>
                 <div class="main-classroom">
-                  <button class="blank">Room 3</button>
+                  <button <?php echo getColor(13);?>>Room 13</button>
                 </div>
               </div>
               <div class="main-classrooms2">
                 <div class="main-classroom">
-                  <button class="blank">Room 4</button>
+                  <button <?php echo getColor(14);?>>Room 14</button>
                 </div>
                 <div class="main-classroom">
-                  <button class="blank">Room 5</button>
+                  <button <?php echo getColor(15);?>>Room 15</button>
                 </div>
                 <div class="main-classroom">
-                  <button class="blank">Computer Laboratory</button>
+                  <button <?php echo getColor(16);?>>Room 16</button>
                 </div>
               </div>
             </div>
@@ -246,7 +245,7 @@
           </div>
           <div class="row3">
             <div class="stairs-classroom2">
-              <button class="blank">Lecture</button>
+              <button <?php echo getColor(17);?>>Room 17</button>
             </div>
             <div class="stairs-side2">
               <div class="stairs-step1a">
@@ -260,13 +259,13 @@
           <div class="rowb1">
             <div class="side-classrooms">
               <div class="side-classroom">
-                <button class="blank">SH1</button>
+                <button <?php echo getColor(18);?>>Room 18</button>
               </div>
               <div class="side-classroom">
-                <button class="blank">SH2</button>
+                <button <?php echo getColor(19);?>>Room 19</button>
               </div>
               <div class="side-classroom">
-                <button class="blank">SH3</button>
+                <button <?php echo getColor(20);?>>Room 20</button>
               </div>
             </div>
             <div class="side-alley">
@@ -287,7 +286,7 @@
       <div class="col1">
         <div class="row1">
           <div class="stairs-classroom">
-            <button class="blank">Room 6</button>
+            <button <?php echo getColor(21);?>>Room 21</button>
           </div>
           <div class="stairs-side">
             <div class="stairs-step1">
@@ -300,24 +299,24 @@
           <div class="main-col1">
             <div class="main-classrooms1">
               <div class="main-classroom">
-                <button class="blank">Room 1</button>
+                <button <?php echo getColor(22);?>>Room 22</button>
               </div>
               <div class="main-classroom">
-                <button class="blank">Room 2</button>
+                <button <?php echo getColor(23);?>>Room 23</button>
               </div>
               <div class="main-classroom">
-                <button class="blank">Room 3</button>
+                <button <?php echo getColor(24);?>>Room 24</button>
               </div>
             </div>
             <div class="main-classrooms2">
               <div class="main-classroom">
-                <button class="blank">Room 4</button>
+                <button <?php echo getColor(25);?>>Room 25</button>
               </div>
               <div class="main-classroom">
-                <button class="blank">Room 5</button>
+                <button <?php echo getColor(3);?>>TVL Room</button>
               </div>
               <div class="main-classroom">
-                <button class="blank">Computer Laboratory</button>
+                <button <?php echo getColor(2);?>>Computer Laboratory</button>
               </div>
             </div>
           </div>
@@ -325,7 +324,7 @@
         </div>
         <div class="row3">
           <div class="stairs-classroom2">
-            <button class="blank">Lecture</button>
+            <button <?php echo getColor(1);?>>Lecture Room</button>
           </div>
           <div class="stairs-side2">
             <div class="stairs-step1a">
@@ -333,6 +332,10 @@
             <div class="stairs-step2b">
             </div>
           </div>
+        </div>
+      </div>
+      <div class="col2">
+        <div class="rowb1">
         </div>
       </div>
     </div>
@@ -348,8 +351,7 @@
       <div class="layout">
         <div class="col1">
           <div class="row1">
-            <div class="stairs-classroom">
-              <button class="blank">Room 7</button>
+            <div class="stairs-classroom" style="border:none;">
             </div>
             <div class="stairs-side">
               <div class="stairs-step1">
@@ -362,32 +364,31 @@
             <div class="main-col1">
               <div class="main-classrooms1">
                 <div class="main-classroom">
-                  <button class="blank">Room 8</button>
+                  <button <?php echo getColor(1);?>>Room 1</button>
                 </div>
                 <div class="main-classroom">
-                  <button class="blank">Room 9</button>
+                  <button <?php echo getColor(2);?>>Room 2</button>
                 </div>
                 <div class="main-classroom">
-                  <button class="blank">Room 10</button>
+                  <button <?php echo getColor(3);?>>Room 3</button>
                 </div>
               </div>
               <div class="main-classrooms2">
                 <div class="main-classroom">
-                  <button class="blank">Room 11</button>
+                  <button <?php echo getColor(4);?>>Room 4</button>
                 </div>
                 <div class="main-classroom">
-                  <button class="blank">Room 12</button>
+                  <button <?php echo getColor(5);?>>Room 5</button>
                 </div>
                 <div class="main-classroom">
-                  <button class="blank">Computer Laboratory</button>
+                  <button <?php echo getColor(6);?>>Room 6</button>
                 </div>
               </div>
             </div>
             <div class="main-col2"></div>
           </div>
           <div class="row3">
-            <div class="stairs-classroom2">
-              <button class="blank">Lecture</button>
+            <div class="stairs-classroom2" style="border:none;">
             </div>
             <div class="stairs-side2">
               <div class="stairs-step1a">
@@ -401,13 +402,13 @@
           <div class="rowb1">
             <div class="side-classrooms">
               <div class="side-classroom">
-                <button class="blank">SH1</button>
+                <button <?php echo getColor(7);?>>Room 7</button>
               </div>
               <div class="side-classroom">
-                <button class="blank">SH2</button>
+                <button <?php echo getColor(8);?>>Room 8</button>
               </div>
               <div class="side-classroom">
-                <button class="blank">SH3</button>
+                <button <?php echo getColor(9);?>>Room 9</button>
               </div>
             </div>
             <div class="side-alley">
