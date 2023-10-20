@@ -7,35 +7,56 @@
    - Locate the `cctc-guided.sql` file in the `db` folder.
    - Import it into your database management system (using phpMyAdmin).
 
-## Notes
-- The `partials` folder is public UI (for display purposes)
-- The `private` folder is after the user login meaning teacher's dashboard
+## Running the web
+   -  Use the `index.php` to run.
 
-- The web application is not yet finished.
-- The `Admin` Feature is not yet developed
-
-## TO DO:
+## TO DO & FIX:
+   - private-search.php
+      *Fix the modal question in according to the status
+      *change the status text color
+      *minimize the size of the 'x' icon
+   -bottom navbar
+      *change the setting icon and functionality ||
+      *build a functionality according to that icon
    - create a basic 
-      LOGIN
-      REGISTER
-      LOGOUT   
-         forms to exchange the current complex form
+      *LOGIN
+      *REGISTER
+      *LOGOUT   
+         *forms to replace the current complex form 
    - add the complete classrooms and its names 
    - create an admin
-   - (add another to do here)
+   -change the database name into appropriate one and fix some codes affected by it.
+   - .......
+   - ........
 
-## Running the Web Application
-
-1. Ensure that your XAMMP is on.
-
-2. Access the main entry point of the web application through your web browser:
-   - [http://localhost/Classroom%20Vacancy%20Interface/index.php](http://localhost/Classroom%20Vacancy%20Interface/index.php) or simply run the `serve-server` in `index.php`.
-
-3. To access the teacher's dashboard:
-   - Visit the URL [http://localhost/Classroom%20Vacancy%20Interface/private/dashboard.php](http://localhost/Classroom%20Vacancy%20Interface/private/dashboard.php). 
-   Or simply run the `serve-server` in `private/dashboard.php`.
-
-
-
+## FOLDER information:
+  - `auth`
+      + This contains all files related to user accounts
+  - `css`
+      + This contains all css files
+  - `db`
+      + This contains the database file
+  - `docs`
+      + This is supposed to handle documentation files (not necessary)
+  - `images`
+      + This contains image files
+  - `includes`
+      + This contains connection to database, and `auth` files php 
+  - js
+      + This contains all JavaScript files
+  - `map`
+      + This contains files related to map || school layout
+  - `partials`
+      + This contains public UI or the main page of the web
+  - `private`
+      + This contains private UI or the teachers dashboard which includes functionality
+  - `private-includes`
+      + This contains the update to status connected to database
+  - `search`
+      + This contains files related to the search functionality
+  - `show-vacants`
+      + This contains files related to the vacant functionality(displaying vacant classroom)
+  - `test`
+      + This folder contains garbage file such as mock-ups and demonstration files.
 
 
