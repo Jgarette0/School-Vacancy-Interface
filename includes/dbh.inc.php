@@ -1,7 +1,7 @@
 <?php 
 
 $host = 'localhost';
-$dbname = 'cctc-guide';
+$dbname = 'cctc';
 $dbusername = 'root';
 $dbpassword = 'jilian';
 

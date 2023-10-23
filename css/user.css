@@ -73,7 +73,7 @@ body{
 .username{
   width: 78%;
   margin-top:7px;
-  padding:5px;
+  padding:9px;
   border-radius:5px;
   border:1px solid var(--dark-color);
   margin-bottom: none;
@@ -90,7 +90,7 @@ body{
 }
 .submit{
   width: 100%;
-  padding:6px;
+  padding:10px;
   border-radius:4px;
   border:none;
   background-color: var(--dark-color);

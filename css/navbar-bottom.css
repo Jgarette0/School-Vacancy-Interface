@@ -39,7 +39,8 @@
 .radio-input:checked + .radio-tile .radio-label {
   color: #00a669;
 }
-.radio-inputs span:hover{
+
+.radio-tile:hover{ 
   border-color: #00a669;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 0 0 4px #89d7b3;
 }
@@ -82,13 +83,6 @@
 }
 
 
-
-
-.radio-icon svg {
-  width: 2rem;
-  height: 2rem;
-  fill: #494949;
-}
 
 .radio-label {
   color: #181818;
@@ -134,5 +128,10 @@
     padding: none;
     text-decoration: none;
   }
+  a img{
+    height: 30px;
+    width: 30px;
+  }
+
     
   

@@ -12,16 +12,17 @@
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/navbar-bottom.css">
-<link rel="stylesheet" href="css/layout.css">
 <link rel="stylesheet" href="css/map.css">
 </head>
 <body>
-  <?php include 'public/navbar-top.php'; ?>
-  <?php include 'layout/public-map-layout.php'; ?>
-  <?php include 'public/navbar-bottom.php'; ?>
+
+  <?php include 'private/navbar-top.php'; ?>
+  <?php include 'private/main.php'; ?>
+  <?php include 'private/map.php'; ?>
+  <?php include 'private/navbar-bottom.php'; ?>
+
+
 </body>
-<script src="data/classroom.js"></script>
-<script src="js/main.js"></script>
 <script src="js/navbar.js"></script>
 <script src="js/user.js"></script>
 </html>
